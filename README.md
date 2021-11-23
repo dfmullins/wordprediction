@@ -12,3 +12,5 @@ This word prediction JS plugin uses an updatable corpus to predict words as you 
 
 
 The plugin can be activated on textareas, input fields, and WYZIWYG editors, by adding the class "wordPrediction". To install this plugin, simply add it to your project like you would any other JS file. You do need to include jQuery solely for the purpose of WYZIWYG editor compatibility. Lastly, this plugin is compatible with IE11, Edge, Chrome, and FireFox.
+
+Try it out here: https://damionmullins.com/projects/wordprediction
