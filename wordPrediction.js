@@ -272,6 +272,7 @@ var DropDownOptions = {
     createDropDown: function (elem) {
         var ul = document.querySelector("#wordPrediction"); 
         if (!ul) {
+            var rect                         = elem.getBoundingClientRect();
             ul                               = document.createElement('ul');
             ul.id                            = 'wordPrediction';
             ul.style.listStyle               = 'none';
@@ -287,7 +288,7 @@ var DropDownOptions = {
             ul.style.display                 = 'none';
             ul.style.fontSize                = '80%';
             ul.style.cursor                  = 'pointer';
-            ul.style.left                    = '15px';
+            ul.style.left                    = rect.left;
             elem.parentNode.insertBefore(ul, elem.nextSibling);
         }
     },
@@ -1518,4 +1519,3 @@ var WordPredictions = {
         return rawCorpus.replace(/\;|,|\"/g, '');
     }
 };
-
